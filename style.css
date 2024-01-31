@@ -1,0 +1,202 @@
+body {
+    font-family: 'Poppins' !important;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #7E6363 !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important
+}
+
+.navbar-toggler {
+    color: black !important;
+    border: 2px solid black !important;
+}
+
+.logo {
+    font-size: 50px !important;
+    margin-left: 5px;
+}
+
+.fa-meteor {
+    font-size: 50px !important;
+}
+
+.headerbtn>input {
+    border-radius: 15px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.headerbtn>button {
+    border-radius: 15px;
+    background-color: #3E3232;
+    border: none;
+    color: white;
+}
+
+.headerbtn>button:hover {
+    background-color: #503C3C;
+}
+
+/* Card Css */
+.mainCard {
+    background-color: #A87C7C;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important;
+    border-radius: 20px !important;
+    background-color: #daa6a5;
+}
+
+.firstTwoBox {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.weather-text,
+#city_Name,
+.image {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.weather-text>h4 {
+    margin-bottom: 0px !important;
+}
+
+.secondTwoBox {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+
+.bx1,
+.bx2,
+.bx3,
+.bx4 {
+    background-color: black;
+    width: 150px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#showData1,
+#showData2,
+#showData3,
+#showData4 {
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Footer */
+
+.info {
+    height: 100px;
+    background-color: #7E6363;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.built>h4,
+.contact>h4 {
+    margin-bottom: 0px !important;
+}
+
+.socialMediaIcons {
+    display: flex;
+    gap: 20px;
+}
+
+.socialMediaIcons>a {
+    color: inherit;
+}
+
+.socialMediaIcons>a>i {
+    font-size: 30px;
+}
+
+.socialMediaIcons>a>i:hover {
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+/* Responsive  */
+
+@media only screen and (max-width: 530px) {
+    .info {
+        flex-direction: column !important;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .mainCard {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .secondTwoBox {
+        gap: 20px;
+    }
+
+    .firstTwoBox {
+        gap: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .secondTwoBox {
+        gap: 10px;
+    }
+
+    .firstTwoBox {
+        gap: 10px;
+    }
+}
+
+/*  */
+
+div:where(.swal2-icon).swal2-error {
+    border-color: black !important;
+}
+
+div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line] {
+    background-color: black !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 15px !important;
+}
+
+/*  */
+.animating {
+    background-color: #4CAF50 !important;
+    /* Change to your desired animation color */
+}

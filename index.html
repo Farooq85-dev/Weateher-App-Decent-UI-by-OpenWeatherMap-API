@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <!-- Bootstrap Css And JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- FontAwesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Manifest json -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#7E6363" />
+    <meta name="theme-color" content="#7E6363" />
+</head>
+
+<body>
+    <!-- BootStrap NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-meteor"></i><span
+                    class="logo">Davicom</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <form class="d-flex headerbtn">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="input">
+                    <button class="btn btn-outline-success" type="submit" id="search">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End BootStrap NavBar -->
+
+    <!-- Wether Data Ui -->
+    <div class="mainCard">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title" id="city_Name">No city yet</h1>
+                <div class="weather-text">
+                    <h3 id="weathercondition">---</h3>
+                    <h4 id="weathertemp">---</h4>
+                </div>
+                <div class="image">
+                    <img alt="---" id="weatherimage">
+                </div>
+                <div class="countryName">
+                    <h5>Country</h5>
+                    <h5 id="countryDisplay">---</h5>
+                </div>
+
+                <div class="feels">
+                    <h5>Feels Like</h5>
+                    <h5 id="feelsLike">---</h5>
+                </div>
+                <div class="secondTwoBox">
+                    <div class="bx3">
+                        <div class="text3">
+                            Sunrise
+                        </div>
+                        <div id="showData3">---</div>
+                    </div>
+                    <div class="bx4">
+                        <div class="text4">
+                            Sunset
+                        </div>
+                        <div id="showData4">---</div>
+                    </div>
+                </div>
+                <div class="firstTwoBox">
+                    <div class="bx1">
+                        <div class="text1">
+                            Humidity
+                        </div>
+                        <div id="showData1">---</div>
+                    </div>
+                    <div class="bx2">
+                        <div class="text2">
+                            W.Speed
+                        </div>
+                        <div id="showData2">---</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--End Wether Data Ui -->
+
+    <!-- Info -->
+    <div class="info">
+        <div class="built">
+            <h4>This App is on built on Advanced JavaScript.</h4>
+        </div>
+        <div class="contact">
+            <div class="socialMediaIcons">
+                <a href="https://github.com/Farooq85-dev" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-farooq-b71886295/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://web.facebook.com/farooq8185" target="_blank"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- End info -->
+
+    <!-- SweetAlert Cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom Js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
